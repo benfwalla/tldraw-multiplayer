@@ -23,6 +23,7 @@ export function Room() {
 				// loading states & enable multiplayer UX like cursors & a presence menu
 				store={store}
 				deepLinks
+				licenseKey={import.meta.env.VITE_TLDRAW_LICENSE}
 				onMount={(editor) => {
 					// when the editor is ready, we need to register our bookmark unfurling service
 					editor.registerExternalAssetHandler('url', getBookmarkPreview)
